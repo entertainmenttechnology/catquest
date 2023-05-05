@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐈</title>
+    <link rel="shortcut icon" href="assets/cat-main.svg" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+		
+    <script type="text/javascript" src = "phaser.min.js"></script>
+    <script type="text/javascript" src = "platform.js"></script>
+		<script type="text/javascript" src = "matching.js"></script>
+		<script type="text/javascript" src = "music.js"></script>
+    <script defer src="index.js"></script>
+		
+</head>
+<body>
+    <div id="scene1">
+        <img id="scene1-img" src="assets/scene1.JPG" alt="">
+    </div>
+    <div id="scene2">
+        <img id="scene2-img" src="assets/scene2.JPG" alt="">
+    </div>
+    <div id="scene3">
+        <img id="scene3-img" src="assets/scene3.JPG" alt="">
+    </div>
+    <div id="scene4">
+        <!--<p>platform game</p>-->
+    </div>
+    <div id="scene5">
+       <img id="qr1-5" src="assets/qr/qr-code-01.png" alt="" />
+    </div>
+    <div id="scene6">
+        <img id="scene6-img" src="assets/preMG1.JPG" alt="">
+    </div>
+    <div id="scene7">
+        <img id="scene7-img" src="assets/preMG2.JPG" alt="">
+    </div>
+    <div id="scene8">
+        
+		<audio id="audio1" src="assets3/Cardflip.mp3"></audio>
+		<audio id="audio2" src="assets3/wrongmatch.mp3"></audio>
+		<audio id="audio3" src="assets3/cardmatch.mp3"></audio>
+    <div id="over">Game Over!</div>
+		<section id="container" class="contain">
+	    <table>
+	        <tr>
+	          <td id="cRound">Current Round: 1</td>
+	          <td id="cMatch">Cards Matched: 0</td>
+	        </tr>
+	    </table>
+	    <section class="inUse"><!--Game set as section of web page-->
+	        <div class="memory-card" id="0" data-framework="Pair1"><!--sets up card-->
+	            <img class="front" src="assets3/Cat1_V2.svg" alt="1"><!--sets card's front side-->
+	            <img class="back" src="assets3/MoonCat.svg" alt ="1"><!--sets card's back side-->
+	        </div>
+	        <div class="memory-card" id="1" data-framework="Pair1"><!--sets up card-->
+	            <img class="front" src="assets3/Cat1_V2.svg" alt="1"><!--charcoal for test-->
+	            <img class="back" src="assets3/MoonCat.svg" alt ="1"><!--sets card's back side-->
+	        </div>
+	        <div class="memory-card" id="2" data-framework="Pair2"><!--sets up card-->
+	            <img class="front" src="assets3/ScratchingPost.svg" alt="2"><!--sets card's front side-->
+	            <img class="back" src="assets3/MoonCat.svg" alt ="2"><!--sets card's back side-->
+	        </div>
+	        <div class="memory-card" id="3" data-framework="Pair2"><!--sets up card-->
+	            <img class="front" src="assets3/ScratchingPost.svg" alt="2"><!--orange for test-->
+	            <img class="back" src="assets3/MoonCat.svg" alt ="2"><!--sets card's back side-->
+	        </div>
+	        <div class="memory-card noUse" id="4" data-framework="Pair3"><!--sets up card-->
+	            <img class="front" src="assets3/Cat3_V2.svg" alt="3"><!--sets card's front side-->
+	            <img class="back" src="assets3/MoonCat.svg" alt ="3"><!--sets card's back side-->
+	        </div>
+	        <div class="memory-card noUse" id="5" data-framework="Pair3"><!--sets up card-->
+	            <img class="front" src="assets3/Cat3_V2.svg" alt="3"><!--sets card's front side-->
+	            <img class="back" src="assets3/MoonCat.svg" alt ="3"><!--sets card's back side-->
+	        </div>
+	        <div class="memory-card noUse" id="6" data-framework="Pair4"><!--sets up card-->
+	            <img class="front" src="assets3/ToyMouse.svg" alt="4"><!--sets card's front side-->
+	            <img class="back" src="assets3/MoonCat.svg" alt ="4"><!--sets card's back side-->
+	        </div>
+	        <div class="memory-card noUse" id="7" data-framework="Pair4"><!--sets up card-->
+	            <img class="front" src="assets3/ToyMouse.svg" alt="4"><!--sets card's front side-->
+	            <img class="back" src="assets3/MoonCat.svg" alt ="4"><!--sets card's back side-->
+	        </div>
+	        <div class="memory-card noUse" id="8" data-framework="Pair5"><!--sets up card-->
+	            <img class="front" src="assets3/Cat2_V2.svg" alt="5"><!--sets card's front side-->
+	            <img class="back" src="assets3/MoonCat.svg" alt ="5"><!--sets card's back side-->
+	        </div>
+	        <div class="memory-card noUse" id="9" data-framework="Pair5"><!--sets up card-->
+	            <img class="front" src="assets3/Cat2_V2.svg" alt="5"><!--sets card's front side-->
+	            <img class="back" src="assets3/MoonCat.svg" alt ="5"><!--sets card's back side-->
+	        </div>
+	        <div class="memory-card noUse" id="10" data-framework="Pair6"><!--sets up card-->
+	            <img class="front" src="assets3/Cat5_v2.svg" alt="6"><!--sets card's front side-->
+	            <img class="back" src="assets3/MoonCat.svg" alt ="6"><!--sets card's back side-->
+	        </div>
+	        <div class="memory-card noUse" id="11" data-framework="Pair6"><!--sets up card-->
+	            <img class="front" src="assets3/Cat5_v2.svg" alt="6"><!--sets card's front side-->
+	            <img class="back" src="assets3/MoonCat.svg" alt ="6"><!--sets card's back side-->
+	        </div>
+	        <div class="memory-card noUse" id="12" data-framework="Pair7"><!--sets up card-->
+	            <img class="front" src="assets3/Cat4_v2.svg" alt="7"><!--sets card's front side-->
+	            <img class="back" src="assets3/MoonCat.svg" alt ="7"><!--sets card's back side-->
+	        </div>
+	        <div class="memory-card noUse" id="13" data-framework="Pair7"><!--sets up card-->
+	            <img class="front" src="assets3/Cat4_v2.svg" alt="7"><!--sets card's front side-->
+	            <img class="back" src="assets3/MoonCat.svg" alt ="7"><!--sets card's back side-->
+	        </div>
+	        <div class="memory-card noUse" id="14" data-framework="Pair8"><!--sets up card-->
+	            <img class="front" src="assets3/Cat6_v2.svg" alt="8"><!--sets card's front side-->
+	            <img class="back" src="assets3/MoonCat.svg" alt ="8"><!--sets card's back side-->
+	        </div>
+	        <div class="memory-card noUse" id="15" data-framework="Pair8"><!--sets up card-->
+	            <img class="front" src="assets3/Cat6_v2.svg" alt="8"><!--sets card's front side-->
+	            <img class="back" src="assets3/MoonCat.svg" alt ="8"><!--sets card's back side-->
+	        </div>
+	    </section>
+		</section>
+		
+    </div>
+    <div id="scene9">
+        <img id="qr1-9" src="assets/qr/qr-code-01.png" alt="" />
+        <img id="qr2-9" src="assets/qr/qr-code-02.png" alt="" />
+    </div>
+    <div id="scene10">
+        <img id="scene10-img" src="assets/preRG1.JPG" alt="">
+    </div>
+    <div id="scene11">
+        <img id="scene11-img" src="assets/preRG2.JPG" alt="">
+    </div>
+    <div id="scene12">
+        <!--<p>rhythm game</p>-->
+    </div>
+    <div id="scene13">
+        <div id="qr-left-wrapepr">
+            <img id="qr1-13" src="assets/qr/qr-code-01.png" alt="" />
+            <img id="qr2-13" src="assets/qr/qr-code-02.png" alt="" />
+        </div>
+        <img id="qr3" src="assets/qr/qr-code-03.png" alt="" />
+    </div>
+    <div id="scene14">
+        <!--<p>final page</p>-->
+				<button type="button" onClick="window.location.reload();">Try Again?</button>
+    </div>
+</body>
+</html>
