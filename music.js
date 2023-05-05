@@ -181,24 +181,24 @@ function preload()
   //798, 672
   //this.load.svg('BUTTONS', 'assets4/buttons/OffBtn.svg', { width: 1300, height: 100 });
   // 315, 800 = 500, 875
-  this.load.svg('CATBTN-R1', 'assets4/buttons/CatBtnL1.svg', { width: 185, height: 100 });
-  this.load.svg('CATBTN-R2', 'assets4/buttons/CatBtnL2.svg', { width: 185, height: 100 });
-  this.load.svg('CATBTN-L1', 'assets4/buttons/CatBtnR1.svg', { width: 185, height: 100 });
-  this.load.svg('CATBTN-L2', 'assets4/buttons/CatBtnR2.svg', { width: 185, height: 100 });
+  this.load.svg('CATBTN-R1', 'assets4/Buttons/CatBtnL1.svg', { width: 185, height: 100 });
+  this.load.svg('CATBTN-R2', 'assets4/Buttons/CatBtnL2.svg', { width: 185, height: 100 });
+  this.load.svg('CATBTN-L1', 'assets4/Buttons/CatBtnR1.svg', { width: 185, height: 100 });
+  this.load.svg('CATBTN-L2', 'assets4/Buttons/CatBtnR2.svg', { width: 185, height: 100 });
 
-  this.load.svg('OFFBTN-L2', 'assets4/buttons/OffL2.svg', { width: 185, height: 100 });
-  this.load.svg('OFFBTN-L1', 'assets4/buttons/OffL1.svg', { width: 185, height: 100 });
-  this.load.svg('OFFBTN-R1', 'assets4/buttons/OffR1.svg', { width: 185, height: 100 });
-  this.load.svg('OFFBTN-R2', 'assets4/buttons/OffR2.svg', { width: 185, height: 100 });
+  this.load.svg('OFFBTN-L2', 'assets4/Buttons/OffL2.svg', { width: 185, height: 100 });
+  this.load.svg('OFFBTN-L1', 'assets4/Buttons/OffL1.svg', { width: 185, height: 100 });
+  this.load.svg('OFFBTN-R1', 'assets4/Buttons/OffR1.svg', { width: 185, height: 100 });
+  this.load.svg('OFFBTN-R2', 'assets4/Buttons/OffR2.svg', { width: 185, height: 100 });
 
-  this.load.svg('ASTEROID1', 'assets4/asteroids/Asteroid01.svg', { width: 80, height: 80 });
-  this.load.svg('ASTEROID2', 'assets4/asteroids/Asteroid02.svg', { width: 80, height: 80 });
-  this.load.svg('ASTEROID3', 'assets4/asteroids/Asteroid03.svg', { width: 80, height: 80 });
-  this.load.svg('ASTEROID4', 'assets4/asteroids/Asteroid04.svg', { width: 80, height: 80 });
-  this.load.svg('PINKASTEROID1', 'assets4/asteroids/RadarAsteroid01.svg', { width: 80, height: 80 });
-  this.load.svg('PINKASTEROID2', 'assets4/asteroids/RadarAsteroid02.svg', { width: 80, height: 80 });
-  this.load.svg('PINKASTEROID3', 'assets4/asteroids/RadarAsteroid03.svg', { width: 80, height: 80 });
-  this.load.svg('PINKASTEROID4', 'assets4/asteroids/RadarAsteroid04.svg', { width: 80, height: 80 });
+  this.load.svg('ASTEROID1', 'assets4/Asteroids/Asteroid01.svg', { width: 80, height: 80 });
+  this.load.svg('ASTEROID2', 'assets4/Asteroids/Asteroid02.svg', { width: 80, height: 80 });
+  this.load.svg('ASTEROID3', 'assets4/Asteroids/Asteroid03.svg', { width: 80, height: 80 });
+  this.load.svg('ASTEROID4', 'assets4/Asteroids/Asteroid04.svg', { width: 80, height: 80 });
+  this.load.svg('PINKASTEROID1', 'assets4/Asteroids/RadarAsteroid01.svg', { width: 80, height: 80 });
+  this.load.svg('PINKASTEROID2', 'assets4/Asteroids/RadarAsteroid02.svg', { width: 80, height: 80 });
+  this.load.svg('PINKASTEROID3', 'assets4/Asteroids/RadarAsteroid03.svg', { width: 80, height: 80 });
+  this.load.svg('PINKASTEROID4', 'assets4/Asteroids/RadarAsteroid04.svg', { width: 80, height: 80 });
 
   this.load.svg('CATNEUTRAL', 'assets4/CatSignifierIdle.svg', { width: 120, height: 120 });
   this.load.svg('CATGOOD', 'assets4/CatSignifierGood.svg', { width: 120, height: 120 });
